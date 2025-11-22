@@ -2,12 +2,79 @@
 
 class App
 {
-    static double _valueMargaritaPizza = 230;
-    static double _valueSalamiPizza = 180;
-    static double _valueShinkaPizza = 170;
-    static double _value4SeasonsPizza = 210;
+    public static string login = "viktor";
+    public static string password = "12345678";
+    public static Pizza[] Pizzas =
+    {
+        new Pizza("Піца Маргарита", 230, 0.4, 920),
+        new Pizza("Піца Салямі", 180, 0.35, 980),
+        new Pizza("Піца з Шинкою", 170, 0.45, 1125),
+        new Pizza("Піца Чотири Сезони", 210, 0.5, 1300),
+        new Pizza("Піца Капрічоза", 190, 0.45, 1215)
+    };
+    
     static string _orders = "";
     static int _code;
+    public static bool verify = false;
+
+    public static void Login()
+    {
+        Console.ForegroundColor = ConsoleColor.DarkCyan;
+        Console.WriteLine("Перед входом в систему увійдіть в акаунт!");
+        for (int i = 3; i > 0; i--)
+        {
+            Console.Write("Введіть логін: ");
+            string inputlogin =  Console.ReadLine();
+            Console.Write("Введіть пароль: ");
+            string inputpassword =  Console.ReadLine();
+            if (inputlogin == login && inputpassword == password)
+            {
+                verify = true;
+                break;
+            }
+            Console.WriteLine($"Логін або пароль введено не правильно(залишилося {i-1} спроб)");
+        }
+    }
+    public static void Statistic()
+    {
+        Console.ForegroundColor = ConsoleColor.Gray;
+        Console.WriteLine("==============СТАТИСТИКА==============\n");
+
+        double total = 0;
+        double min = double.MaxValue;
+        double max = double.MinValue;
+        int count = Pizzas.Length;
+        int expensivecount = 0;
+
+        for (int i = 0; i < Pizzas.Length; i++)
+        {
+            double price = Pizzas[i].Value;
+
+            total += price;
+
+            if (price < min)
+                min = price;
+
+            if (price > max)
+                max = price;
+
+            if (price > 200)
+                expensivecount++;
+        }
+
+        double average = total / count;
+
+        Console.WriteLine($"Сумарна ціна всіх піц: {total} грн");
+        Console.WriteLine($"Середня ціна піци: {Math.Round(average, 2)} грн");
+        Console.WriteLine($"Мінімальна ціна піци: {min} грн");
+        Console.WriteLine($"Максимальна ціна піци: {max} грн");
+        Console.WriteLine($"Кількість піц з ціною > 200 грн: {expensivecount}");
+
+        Console.WriteLine("Натисніть будь-яку клавішу, щоб повернутися в головне меню:");
+        Console.ResetColor();
+        Console.ReadKey();
+        MainMenu();
+    }
     public static int MainUserChoice(int min, int max)
     {
         int number;
@@ -75,10 +142,11 @@ class App
         Console.WriteLine("1. Зробити нове замовлення");
         Console.WriteLine("2. Переглянути меню");
         Console.WriteLine("3. Перевірити замовлення");
-        Console.WriteLine("4. Вийти");
+        Console.WriteLine("4. Статистика");
+        Console.WriteLine("5. Вийти");
         Console.ResetColor();
         
-        int choice = MainUserChoice(1, 4);
+        int choice = MainUserChoice(1, 5);
         switch (choice)
         {
             case 1:
@@ -90,6 +158,11 @@ class App
             case 3:
                 OrderMenu();
                 break;
+            case 4:
+                Statistic();
+                break;
+            case 5:
+                break;
                 
         }
     }
@@ -97,11 +170,11 @@ class App
     public static void ShowMenu()
     {
         Console.ForegroundColor = ConsoleColor.DarkCyan;
-        
-        Console.WriteLine($"1. Піца Маргарита({_valueMargaritaPizza} грн.)");
-        Console.WriteLine($"2. Піца Салямі({_valueSalamiPizza} грн.)");
-        Console.WriteLine($"3. Піца з Шинкою({_valueShinkaPizza} грн.)");
-        Console.WriteLine($"4. Піца Чотири Сезони({_value4SeasonsPizza} грн.)");
+
+        for (int i = 0; i <= Pizzas.Length-1; i++)
+        {
+            Console.WriteLine($"{i+1}. {Pizzas[i].Name} | ({Pizzas[i].Value}) грн. | {Pizzas[i].Calories} калорій | Вага: {Pizzas[i].Weight} кг.");
+        }
         Console.WriteLine("Натисніть будь-яку клавішу щоб повернутись в головне меню");
         Console.ReadKey();
         Console.ResetColor();
@@ -114,12 +187,11 @@ class App
         Console.WriteLine("========================================");
         Console.WriteLine("=============НОВЕ ЗАМОВЛЕННЯ============");
         Console.WriteLine("========================================\n");
-        var sum1 = OrderChoice("Піци Маргарита");
-        var sum2 = OrderChoice("Піци Салямі");
-        var sum3 = OrderChoice("Піци з Шинкою");
-        var sum4 = OrderChoice("Піци Чотири Сезони");
-        double value = sum1 * _valueMargaritaPizza + sum2 * _valueSalamiPizza + sum3 * _valueShinkaPizza +
-        sum4 * _value4SeasonsPizza;
+        double value = 0;
+        for (int i = 0; i <= Pizzas.Length-1; i++)
+        {
+            value += OrderChoice(Pizzas[i].Name) * Pizzas[i].Value;
+        }
         int discount = 0;
         if (value >= 500)
         {
@@ -154,7 +226,7 @@ class App
         Console.WriteLine(Math.Round(value,2) + "грн");
         Console.WriteLine($"Знижка {discount}%");
         Console.Write("Вартість зі знижкою: ");
-        Console.WriteLine(Math.Round(value,2)/100*(100-discount) + "грн");
+        Console.WriteLine(Math.Round(value*(100-discount)/100, 2) + "грн");
         Console.WriteLine("Дякую за покупку! (натисніть будь-яку клавішу щоб повернутись в головне меню)");
         Console.ResetColor();
         Console.ReadKey();
@@ -198,6 +270,14 @@ class App
     
     public static void Main()
     {
+        Login();
+        if (!verify)
+        {
+            return;
+        }
+        Console.WriteLine("Підтверджено вхід в систему, натисніть будь-яку клавішу щоб продовжити:");
+        Console.ResetColor();
+        Console.ReadKey();
         MainMenu();
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
         Console.Write("Дякую за користування нашим сервісом! Натисніть будь-яку клавішу щоб вийти:");
