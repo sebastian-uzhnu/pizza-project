@@ -6,7 +6,18 @@ class Program
     static int _code;
     public static bool verify = false;
     public static string currentDir = Directory.GetCurrentDirectory();
-    public static string[] products = File.ReadAllLines(currentDir + "/products.csv");
+    public static string[] products;
+    public static void EnsureFileExists(string path, string header)
+    {
+        if (!File.Exists(path))
+        {
+            using (var create = File.Create(path)) { }
+            File.WriteAllText(path, header + Environment.NewLine);
+            Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine($"Файл {Path.GetFileName(path)} створено з шапкою.");
+            Console.ResetColor();
+        }
+    }
     public static void Sort()
     {
         Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -525,6 +536,9 @@ class Program
 
     public static void Main()
     {
+        EnsureFileExists(currentDir + "/products.csv", "Id,Name,Price,Weight,Calories");
+        EnsureFileExists(currentDir + "/users.csv", "Id,Login,Password");
+        products = File.ReadAllLines(currentDir + "/products.csv");
         if (products.Length == 0 || products[0].Trim() != "Id,Name,Price,Weight,Calories")
         {
             Console.WriteLine("Некоректна шапка CSV файлу!");
