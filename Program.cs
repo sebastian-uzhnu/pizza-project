@@ -5,6 +5,7 @@ class Program
     static string _orders = "";
     static int _code;
     public static bool verify = false;
+    public static bool root = false;
     public static string currentDir = Directory.GetCurrentDirectory();
     public static string[] products;
     public static void EnsureFileExists(string path, string header)
@@ -38,7 +39,14 @@ class Program
                 Console.WriteLine("Список відсортовано за ціною!");
                 break;
             case 3:
-                MainMenu();
+                if (root)
+                {
+                    rootMainMenu();
+                }
+                else
+                {
+                    MainMenu();
+                }
                 return;
         }
         Console.ResetColor();
@@ -118,7 +126,7 @@ class Program
         Console.WriteLine($"Товар '{name}' успішно додано!");
         Console.WriteLine("Натисніть будь-яку клавішу щоб повернутись у головне меню:");
         Console.ReadKey();
-        MainMenu();
+        rootMainMenu();
     }
 
     public static void RemoveProduct()
@@ -154,7 +162,7 @@ class Program
         File.WriteAllLines(currentDir + "/products.csv", lines);
         Console.WriteLine("Натисніть будь-яку клавішу щоб повернутись у головне меню:");
         Console.ReadKey();
-        MainMenu();
+        rootMainMenu();
     }
     public static void Search()
     {
@@ -182,7 +190,14 @@ class Program
         Console.ResetColor();
         Console.WriteLine("Натисніть будь-яку клавішу щоб повернутись у головне меню:");
         Console.ReadKey();
-        MainMenu();
+        if (root)
+        {
+            rootMainMenu();
+        }
+        else
+        {
+            MainMenu();
+        }
     }
 
     public static void Enter()
@@ -228,6 +243,10 @@ class Program
             }
             if (verify)
             {
+                if (inputlogin == "admin")
+                {
+                    root = true;
+                }
                 break;
             }
             Console.WriteLine($"Логін або пароль введено не правильно(залишилося {i-1} спроб)");
@@ -328,7 +347,14 @@ class Program
         Console.WriteLine("Натисніть будь-яку клавішу, щоб повернутися в головне меню:");
         Console.ResetColor();
         Console.ReadKey();
-        MainMenu();
+        if (root)
+        {
+            rootMainMenu();
+        }
+        else
+        {
+            MainMenu();
+        }
     }
 
     public static int MainUserChoice(int min, int max)
@@ -389,7 +415,7 @@ class Program
         }
     }
 
-    public static void MainMenu()
+    public static void rootMainMenu()
     {
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
         Console.WriteLine("========================================");
@@ -421,6 +447,34 @@ class Program
             case 9: break;
         }
     }
+    public static void MainMenu()
+    {
+        Console.ForegroundColor = ConsoleColor.DarkMagenta;
+        Console.WriteLine("========================================");
+        Console.WriteLine("===========PIZZA ORDER SERVICE==========");
+        Console.WriteLine("========================================");
+        Console.WriteLine("Вітаємо у нашій піцерії!\n");
+        Console.WriteLine("1. Зробити нове замовлення");
+        Console.WriteLine("2. Переглянути меню");
+        Console.WriteLine("3. Перевірити замовлення");
+        Console.WriteLine("4. Статистика");
+        Console.WriteLine("5. Пошук");
+        Console.WriteLine("6. Сортування");
+        Console.WriteLine("7. Вийти");
+        Console.ResetColor();
+        
+        int choice = MainUserChoice(1, 7);
+        switch (choice)
+        {
+            case 1: Order(); break;
+            case 2: ShowMenu(); break;
+            case 3: OrderMenu(); break;
+            case 4: Statistic(); break;
+            case 5: Search(); break;
+            case 6: Sort(); break;
+            case 7: break;
+        }
+    }
 
     public static void ShowMenu()
     {
@@ -428,7 +482,14 @@ class Program
         Console.WriteLine("Натисніть будь-яку клавішу щоб повернутись в головне меню");
         Console.ReadKey();
         Console.ResetColor();
-        MainMenu();
+        if (root)
+        {
+            rootMainMenu();
+        }
+        else
+        {
+            MainMenu();
+        }
     }
 
     public static void RenderMenu()
@@ -496,7 +557,14 @@ class Program
         Console.WriteLine("Дякую за покупку! (натисніть будь-яку клавішу щоб повернутись в головне меню)");
         Console.ResetColor();
         Console.ReadKey();
-        MainMenu();
+        if (root)
+        {
+            rootMainMenu();
+        }
+        else
+        {
+            MainMenu();
+        }
     }
 
     public static void OrderMenu()
@@ -528,7 +596,14 @@ class Program
                 OrderMenu();
                 break;
             case 3:
-                MainMenu();
+                if (root)
+                {
+                    rootMainMenu();
+                }
+                else
+                {
+                    MainMenu();
+                }
                 break;
         }
         Console.ResetColor();
@@ -568,7 +643,14 @@ class Program
         Console.WriteLine("Підтверджено вхід в систему, натисніть будь-яку клавішу щоб продовжити:");
         Console.ResetColor();
         Console.ReadKey();
-        MainMenu();
+        if (root)
+        {
+            rootMainMenu();
+        }
+        else
+        {
+            MainMenu();
+        }
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
         Console.Write("Дякую за користування нашим сервісом! Натисніть будь-яку клавішу щоб вийти:");
         Console.ReadKey();
