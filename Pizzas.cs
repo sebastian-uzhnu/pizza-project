@@ -1,13 +1,13 @@
 namespace Pizzeria;
 
-public struct Pizza
+public struct PizzaNew
 {
     public string Name;
     public double Value;
     public double Weight;
     public int Calories;
 
-    public Pizza(string name, double price, double weight, int calories)
+    public PizzaNew(string name, double price, double weight, int calories)
     {
         Name = name;
         Value = price;

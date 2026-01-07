@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "/home/shiro_845/RiderProjects/Lab2_Pizzeria/Pizzeria.csproj": {}
+    "/Users/sebastian/Downloads/demo/Pizzeria.csproj": {}
   },
   "projects": {
-    "/home/shiro_845/RiderProjects/Lab2_Pizzeria/Pizzeria.csproj": {
+    "/Users/sebastian/Downloads/demo/Pizzeria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/shiro_845/RiderProjects/Lab2_Pizzeria/Pizzeria.csproj",
+        "projectUniqueName": "/Users/sebastian/Downloads/demo/Pizzeria.csproj",
         "projectName": "Pizzeria",
-        "projectPath": "/home/shiro_845/RiderProjects/Lab2_Pizzeria/Pizzeria.csproj",
-        "packagesPath": "/home/shiro_845/.nuget/packages/",
-        "outputPath": "/home/shiro_845/RiderProjects/Lab2_Pizzeria/obj/",
+        "projectPath": "/Users/sebastian/Downloads/demo/Pizzeria.csproj",
+        "packagesPath": "/Users/sebastian/.nuget/packages/",
+        "outputPath": "/Users/sebastian/Downloads/demo/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/home/shiro_845/.nuget/NuGet/NuGet.Config"
+          "/Users/sebastian/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -38,11 +38,19 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.1.118, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -59,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/home/shiro_845/.dotnet/sdk/9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

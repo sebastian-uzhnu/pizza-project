@@ -2,15 +2,17 @@
 using System.Text;
 
 namespace Pizzeria;
+
 class Program
 {
-    public static List<Pizza> Pizzas = new List<Pizza>{};
+    public static List<PizzaNew> Pizzas = new List<PizzaNew> { };
     static string _orders = "";
-    static int _code;
+    private static int _code;
     public static bool verify = false;
     public static bool root = false;
     public static string currentDir = Directory.GetCurrentDirectory();
     public static string[] products;
+
     public static void EnsureFileExists(string path, string header)
     {
         if (!File.Exists(path))
@@ -22,6 +24,7 @@ class Program
             Console.ResetColor();
         }
     }
+
     public static void Sort()
     {
         Console.ForegroundColor = ConsoleColor.DarkBlue;
@@ -29,7 +32,7 @@ class Program
         Console.WriteLine("1. За назвою");
         Console.WriteLine("2. За ціною (Bubble)");
         Console.WriteLine("3. Назад");
-    
+
         int choice = MainUserChoice(1, 3);
         switch (choice)
         {
@@ -50,8 +53,10 @@ class Program
                 {
                     MainMenu();
                 }
+
                 return;
         }
+
         Console.ResetColor();
         ShowMenu();
     }
@@ -65,13 +70,14 @@ class Program
             {
                 if (Pizzas[j].Value > Pizzas[j + 1].Value)
                 {
-                    Pizza s = Pizzas[j];
+                    PizzaNew s = Pizzas[j];
                     Pizzas[j] = Pizzas[j + 1];
                     Pizzas[j + 1] = s;
                 }
             }
         }
     }
+
     public static void AddProduct()
     {
         string name;
@@ -84,13 +90,16 @@ class Program
                 Console.WriteLine("Помилка! Символи коми та крапки з комою заборонені");
                 continue;
             }
+
             if (name.Length == 0)
             {
                 Console.WriteLine("Помилка! Нічого не введено");
                 continue;
             }
-                break;
+
+            break;
         }
+
         double price;
         while (true)
         {
@@ -99,6 +108,7 @@ class Program
                 break;
             Console.WriteLine("Помилка! Введіть коректне число для ціни");
         }
+
         double weight;
         while (true)
         {
@@ -107,6 +117,7 @@ class Program
                 break;
             Console.WriteLine("Помилка! Введіть коректне число для ваги");
         }
+
         int calories;
         while (true)
         {
@@ -119,18 +130,20 @@ class Program
         if (File.Exists(currentDir + "/products.csv"))
         {
             int id = IdGenerator.GenerateNewId(currentDir + "/products.csv");
-            File.AppendAllText(currentDir + "/products.csv", "\n" + Convert.ToString(id)+",");
+            File.AppendAllText(currentDir + "/products.csv", "\n" + Convert.ToString(id) + ",");
             File.AppendAllText(currentDir + "/products.csv", name + ",");
-            File.AppendAllText(currentDir + "/products.csv", Convert.ToString(price)+",");
-            File.AppendAllText(currentDir + "/products.csv", Convert.ToString(weight)+",");
+            File.AppendAllText(currentDir + "/products.csv", Convert.ToString(price) + ",");
+            File.AppendAllText(currentDir + "/products.csv", Convert.ToString(weight) + ",");
             File.AppendAllText(currentDir + "/products.csv", Convert.ToString(calories));
         }
-        Pizzas.Add(new Pizza(name, price, weight, calories));
+
+        Pizzas.Add(new PizzaNew(name, price, weight, calories));
         Console.WriteLine($"Товар '{name}' успішно додано!");
         Console.WriteLine("Натисніть будь-яку клавішу щоб повернутись у головне меню:");
         Console.ReadKey();
         rootMainMenu();
     }
+
 
     public static void RemoveProduct()
     {
@@ -153,7 +166,7 @@ class Program
         {
             Console.WriteLine("Товар з таким ID не знайдено!");
         }
-        
+
         List<string> lines = new List<string>();
         lines.Add("Id,Name,Price,Weight,Calories");
 
@@ -167,23 +180,23 @@ class Program
         Console.ReadKey();
         rootMainMenu();
     }
+
     public static void Search()
     {
-        Console.ForegroundColor = ConsoleColor.Yellow;
-        Console.Write("Введіть назву товару для пошуку: ");
         string query = Console.ReadLine()!.ToLower();
         bool found = false;
         string[] lines = File.ReadAllLines(currentDir + "/products.csv");
-        
+
         for (int i = 0; i < Pizzas.Count; i++)
         {
-            string[] parts = lines[i+1].Split(',');
+            string[] parts = lines[i + 1].Split(',');
             if (Pizzas[i].Name.ToLower().Contains(query))
             {
                 found = true;
                 Console.WriteLine($"{parts[0]}. {parts[1]} | {parts[2]} грн | {parts[3]} кг | {parts[4]} кал");
             }
         }
+
         if (!found)
         {
             Console.ForegroundColor = ConsoleColor.Red;
@@ -219,14 +232,15 @@ class Program
                 Registration();
                 break;
         }
-        
     }
+
     public static string HashPassword(string password)
     {
         using SHA256 sha256 = SHA256.Create();
         byte[] bytes = sha256.ComputeHash(Encoding.UTF8.GetBytes(password));
         return Convert.ToBase64String(bytes);
     }
+
     public static void Login()
     {
         Console.ForegroundColor = ConsoleColor.DarkCyan;
@@ -234,14 +248,14 @@ class Program
         for (int i = 3; i > 0; i--)
         {
             Console.Write("Введіть логін: ");
-            string inputlogin =  Console.ReadLine();
+            string inputlogin = Console.ReadLine();
             Console.Write("Введіть пароль: ");
             string inputpassword = Console.ReadLine();
             string inputPasswordHash = HashPassword(inputpassword);
             for (int j = 1; j < lines.Length; j++)
             {
                 string[] parts = lines[j].Split(',');
-                if (parts.Length < 3) 
+                if (parts.Length < 3)
                     continue;
                 string login = parts[1];
                 string password = parts[2];
@@ -251,15 +265,18 @@ class Program
                     break;
                 }
             }
+
             if (verify)
             {
                 if (inputlogin == "admin")
                 {
                     root = true;
                 }
+
                 break;
             }
-            Console.WriteLine($"Логін або пароль введено не правильно(залишилося {i-1} спроб)");
+
+            Console.WriteLine($"Логін або пароль введено не правильно(залишилося {i - 1} спроб)");
         }
     }
 
@@ -283,16 +300,19 @@ class Program
                     break;
                 }
             }
+
             if (login.Length <= 3)
             {
                 Console.WriteLine("Логін повинен бути мінімум 4 символа довжиною");
                 continue;
             }
+
             if (login.Contains(",") || login.Contains(";"))
             {
                 Console.WriteLine("Логін не може містити коми або крапки з комою");
                 continue;
             }
+
             break;
         }
 
@@ -310,14 +330,16 @@ class Program
             {
                 Console.WriteLine("Пароль повинен бути мінімум 4 символи довжиною");
             }
+
             break;
         }
+
         int id = IdGenerator.GenerateNewId(currentDir + "/users.csv");
         string passwordHash = HashPassword(password);
-        File.AppendAllText(currentDir + "/users.csv", "\n" + Convert.ToString(id)+",");
+        File.AppendAllText(currentDir + "/users.csv", "\n" + Convert.ToString(id) + ",");
         File.AppendAllText(currentDir + "/users.csv", login + ",");
         File.AppendAllText(currentDir + "/users.csv", passwordHash);
-        verify =  true;
+        verify = true;
     }
 
     public static void Statistic()
@@ -338,13 +360,16 @@ class Program
             total += price;
 
             if (price < min)
+            {
                 min = price;
+            }
 
             if (price > max)
+            {
                 max = price;
+            }
 
-            if (price > 200)
-                expensivecount++;
+            if (price > 200) expensivecount++;
         }
 
         double average = total / count;
@@ -443,7 +468,7 @@ class Program
         Console.WriteLine("8. Сортування");
         Console.WriteLine("9. Вийти");
         Console.ResetColor();
-        
+
         int choice = MainUserChoice(1, 9);
         switch (choice)
         {
@@ -458,6 +483,7 @@ class Program
             case 9: break;
         }
     }
+
     public static void MainMenu()
     {
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
@@ -473,7 +499,7 @@ class Program
         Console.WriteLine("6. Сортування");
         Console.WriteLine("7. Вийти");
         Console.ResetColor();
-        
+
         int choice = MainUserChoice(1, 7);
         switch (choice)
         {
@@ -503,10 +529,11 @@ class Program
         }
     }
 
+
     public static void RenderMenu()
     {
         Console.ForegroundColor = ConsoleColor.DarkCyan;
-        Console.WriteLine("{0,-3} | {1,-25} | {2,-8} | {3,-10} | {4,-6}",  "№", "Назва піци", "Ціна", "Калорії", "Вага");
+        Console.WriteLine("{0,-3} | {1,-25} | {2,-8} | {3,-10} | {4,-6}", "№", "Назва піци", "Ціна", "Калорії", "Вага");
         Console.WriteLine(new string('-', 65));
         for (int i = 0; i < Pizzas.Count; i++)
         {
@@ -530,6 +557,7 @@ class Program
         {
             value += OrderChoice(Pizzas[i].Name) * Pizzas[i].Value;
         }
+
         int discount = 0;
         if (value >= 500)
         {
@@ -545,13 +573,14 @@ class Program
 
         if (value >= 2000)
         {
-            discount = 20; 
+            discount = 20;
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Yellow;
         }
+
         _code++;
         string zeros = "";
-        
+
         for (int i = 0; i < 4 - Convert.ToString(_code).Length; i++)
         {
             zeros += "0";
@@ -561,10 +590,10 @@ class Program
         Console.WriteLine("===Підсумки замовлення===");
         Console.WriteLine($"Номер замовлення: №{zeros}{_code}");
         Console.Write("Загальна вартість: ");
-        Console.WriteLine(Math.Round(value,2) + "грн");
+        Console.WriteLine(Math.Round(value, 2) + "грн");
         Console.WriteLine($"Знижка {discount}%");
         Console.Write("Вартість зі знижкою: ");
-        Console.WriteLine(Math.Round(value*(100-discount)/100, 2) + "грн");
+        Console.WriteLine(Math.Round(value * (100 - discount) / 100, 2) + "грн");
         Console.WriteLine("Дякую за покупку! (натисніть будь-яку клавішу щоб повернутись в головне меню)");
         Console.ResetColor();
         Console.ReadKey();
@@ -596,6 +625,7 @@ class Program
                 {
                     Console.WriteLine(_orders + "\n");
                 }
+
                 Console.WriteLine("Натисніть будь-яку клавішу щоби повернутись в меню замовлень");
                 Console.ReadKey();
                 OrderMenu();
@@ -615,8 +645,10 @@ class Program
                 {
                     MainMenu();
                 }
+
                 break;
         }
+
         Console.ResetColor();
     }
 
@@ -629,6 +661,7 @@ class Program
         {
             Console.WriteLine("Некоректна шапка CSV файлу!");
         }
+
         for (int i = 1; i < products.Length; i++)
         {
             string[] parts = products[i].Split(',');
@@ -639,18 +672,20 @@ class Program
                 Console.ResetColor();
                 continue;
             }
+
             string name = parts[1];
             double price = double.Parse(parts[2]);
             double weight = double.Parse(parts[3]);
-            int calories =  int.Parse(parts[4]);
-            Pizzas.Add(new Pizza(name, price, weight, calories));
+            int calories = int.Parse(parts[4]);
+            Pizzas.Add(new PizzaNew(name, price, weight, calories));
         }
 
-         Enter();
-         if (!verify)
-         {
-             return;
-         }
+        Enter();
+        if (!verify)
+        {
+            return;
+        }
+
         Console.WriteLine("Підтверджено вхід в систему, натисніть будь-яку клавішу щоб продовжити:");
         Console.ResetColor();
         Console.ReadKey();
@@ -662,6 +697,7 @@ class Program
         {
             MainMenu();
         }
+
         Console.ForegroundColor = ConsoleColor.DarkMagenta;
         Console.Write("Дякую за користування нашим сервісом! Натисніть будь-яку клавішу щоб вийти:");
         Console.ReadKey();
