@@ -36,7 +36,6 @@
 /Users/sebastian/Downloads/demo/obj/Debug/net9.0/Pizzeria.AssemblyInfoInputs.cache
 /Users/sebastian/Downloads/demo/obj/Debug/net9.0/Pizzeria.AssemblyInfo.cs
 /Users/sebastian/Downloads/demo/obj/Debug/net9.0/Pizzeria.csproj.CoreCompileInputs.cache
-/Users/sebastian/Downloads/demo/obj/Debug/net9.0/Pizzeria.sourcelink.json
 /Users/sebastian/Downloads/demo/obj/Debug/net9.0/Pizzeria.dll
 /Users/sebastian/Downloads/demo/obj/Debug/net9.0/refint/Pizzeria.dll
 /Users/sebastian/Downloads/demo/obj/Debug/net9.0/Pizzeria.pdb

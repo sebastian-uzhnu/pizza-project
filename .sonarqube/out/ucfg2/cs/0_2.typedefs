@@ -1,0 +1,9 @@
+S
+Pizzeria.IdGeneratorobject3
+IdGenerator()"Pizzeria.IdGenerator.IdGenerator()C
+Pizzeria.Programobject'
+	Program()Pizzeria.Program.Program()»
+Pizzeria.PizzaNewSystem.ValueTypeobject`
+%PizzaNew(string, double, double, int)7Pizzeria.PizzaNew.PizzaNew(string, double, double, int)*
+
+PizzaNew()Pizzeria.PizzaNew.PizzaNew()

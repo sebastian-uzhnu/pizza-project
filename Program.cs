@@ -532,6 +532,7 @@ class Program
 
     public static void RenderMenu()
     {
+        Console.WriteLine("Hello");
         Console.ForegroundColor = ConsoleColor.DarkCyan;
         Console.WriteLine("{0,-3} | {1,-25} | {2,-8} | {3,-10} | {4,-6}", "№", "Назва піци", "Ціна", "Калорії", "Вага");
         Console.WriteLine(new string('-', 65));

@@ -1,0 +1,7 @@
+organization=sebastian-uzhnu
+projectKey=sebastian-uzhnu_pizza-project
+serverUrl=https://sonarcloud.io
+serverVersion=8.0.0.78157
+dashboardUrl=https://sonarcloud.io/dashboard?id=sebastian-uzhnu_pizza-project
+ceTaskId=AZuYGL3I_ryF1sg6GDUb
+ceTaskUrl=https://sonarcloud.io/api/ce/task?id=AZuYGL3I_ryF1sg6GDUb

@@ -1,0 +1,2689 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.12.0.0",
+        "fileVersion": "4.12.0-3.24570.6 (913fb4ec)",
+        "semanticVersion": "4.12.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 251,
+                  "startColumn": 33,
+                  "endLine": 251,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 253,
+                  "startColumn": 36,
+                  "endLine": 253,
+                  "endColumn": 54
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8604",
+          "level": "warning",
+          "message": "Possible null reference argument for parameter 'password' in 'string Program.HashPassword(string password)'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 254,
+                  "startColumn": 53,
+                  "endLine": 254,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 292,
+                  "startColumn": 21,
+                  "endLine": 292,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 21,
+                  "endLine": 293,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8600",
+          "level": "warning",
+          "message": "Converting null literal or possible null value to non-nullable type.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 322,
+                  "startColumn": 24,
+                  "endLine": 322,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8602",
+          "level": "warning",
+          "message": "Dereference of a possibly null reference.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 17,
+                  "endLine": 323,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable field 'products' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the field as nullable.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1401",
+          "level": "warning",
+          "message": "Field should be private",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 24,
+                  "endLine": 12,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1401",
+          "level": "warning",
+          "message": "Field should be private",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 34,
+                  "endLine": 8,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1401",
+          "level": "warning",
+          "message": "Field should be private",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 26,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1401",
+          "level": "warning",
+          "message": "Field should be private",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1518",
+          "level": "warning",
+          "message": "File is required to end with a single newline character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 2,
+                  "endLine": 25,
+                  "endColumn": 2
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'root' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 24,
+                  "endLine": 12,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'products' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'Pizzas' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 34,
+                  "endLine": 8,
+                  "endColumn": 40
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1400",
+          "level": "warning",
+          "message": "Element '_orders' should declare an access modifier",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 19,
+                  "endLine": 9,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 7,
+                  "endLine": 6,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1118",
+          "level": "warning",
+          "message": "Add a 'protected' constructor or the 'static' keyword to the class declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 2,
+                  "startColumn": 14,
+                  "endLine": 2,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1307",
+          "level": "warning",
+          "message": "Field 'products' should begin with upper-case letter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 14,
+                  "startColumn": 28,
+                  "endLine": 14,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1307",
+          "level": "warning",
+          "message": "Field 'root' should begin with upper-case letter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 24,
+                  "endLine": 12,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'currentDir' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 26,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1122",
+          "level": "warning",
+          "message": "Use string.Empty for empty strings",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 9,
+                  "startColumn": 29,
+                  "endLine": 9,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Pizzas.cs",
+                "region": {
+                  "startLine": 5,
+                  "startColumn": 19,
+                  "endLine": 5,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Pizzas.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 19,
+                  "endLine": 6,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Pizzas.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 19,
+                  "endLine": 7,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1104",
+          "level": "warning",
+          "message": "Make this field 'private' and encapsulate it in a 'public' property.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Pizzas.cs",
+                "region": {
+                  "startLine": 8,
+                  "startColumn": 16,
+                  "endLine": 8,
+                  "endColumn": 24
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1307",
+          "level": "warning",
+          "message": "Field 'currentDir' should begin with upper-case letter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 13,
+                  "startColumn": 26,
+                  "endLine": 13,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Pizzas.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1633",
+          "level": "warning",
+          "message": "The file header is missing or not located at the top of the file.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 1,
+                  "startColumn": 1,
+                  "endLine": 1,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1507",
+          "level": "warning",
+          "message": "Code should not contain multiple blank lines in a row",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 1,
+                  "endLine": 148,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1507",
+          "level": "warning",
+          "message": "Code should not contain multiple blank lines in a row",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 531,
+                  "startColumn": 1,
+                  "endLine": 533,
+                  "endColumn": 1
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1009",
+          "level": "warning",
+          "message": "Closing parenthesis should be followed by a space.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 37,
+                  "endLine": 87,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "action": "insert",
+              "location": "following"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1009",
+          "level": "warning",
+          "message": "Closing parenthesis should be followed by a space.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 186,
+                  "startColumn": 41,
+                  "endLine": 186,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "action": "insert",
+              "location": "following"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1009",
+          "level": "warning",
+          "message": "Closing parenthesis should be followed by a space.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 402,
+                  "startColumn": 45,
+                  "endLine": 402,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "action": "insert",
+              "location": "following"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1009",
+          "level": "warning",
+          "message": "Closing parenthesis should be followed by a space.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 431,
+                  "startColumn": 45,
+                  "endLine": 431,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "action": "insert",
+              "location": "following"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1009",
+          "level": "warning",
+          "message": "Closing parenthesis should not be preceded by a space.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 13,
+                  "endLine": 545,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "action": "remove",
+              "layout": "pack",
+              "location": "preceding"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1401",
+          "level": "warning",
+          "message": "Field should be private",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 24,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2223",
+          "level": "warning",
+          "message": "Change the visibility of 'verify' or make it 'const' or 'readonly'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 24,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1307",
+          "level": "warning",
+          "message": "Field 'verify' should begin with upper-case letter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 24,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal '/products.csv' 11 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 38,
+                  "endLine": 130,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 61,
+                  "endLine": 132,
+                  "endColumn": 76
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 45,
+                  "endLine": 133,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 134,
+                  "startColumn": 45,
+                  "endLine": 134,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 135,
+                  "startColumn": 45,
+                  "endLine": 135,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 136,
+                  "startColumn": 45,
+                  "endLine": 136,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 45,
+                  "endLine": 137,
+                  "endColumn": 60
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 178,
+                  "startColumn": 41,
+                  "endLine": 178,
+                  "endColumn": 56
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 188,
+                  "startColumn": 57,
+                  "endLine": 188,
+                  "endColumn": 72
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 657,
+                  "startColumn": 39,
+                  "endLine": 657,
+                  "endColumn": 54
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 659,
+                  "startColumn": 51,
+                  "endLine": 659,
+                  "endColumn": 66
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null,
+              "6": null,
+              "7": null,
+              "8": null,
+              "9": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal '/users.csv' 7 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 247,
+                  "startColumn": 57,
+                  "endLine": 247,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 285,
+                  "startColumn": 57,
+                  "endLine": 285,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 337,
+                  "startColumn": 57,
+                  "endLine": 337,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 339,
+                  "startColumn": 41,
+                  "endLine": 339,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 340,
+                  "startColumn": 41,
+                  "endLine": 340,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 341,
+                  "startColumn": 41,
+                  "endLine": 341,
+                  "endColumn": 53
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 658,
+                  "startColumn": 39,
+                  "endLine": 658,
+                  "endColumn": 51
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null,
+              "4": null,
+              "5": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1192",
+          "level": "warning",
+          "message": "Define a constant instead of using this literal '========================================' 5 times.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 457,
+                  "startColumn": 27,
+                  "endLine": 457,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 459,
+                  "startColumn": 27,
+                  "endLine": 459,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 490,
+                  "startColumn": 27,
+                  "endLine": 490,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 492,
+                  "startColumn": 27,
+                  "endLine": 492,
+                  "endColumn": 69
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 552,
+                  "startColumn": 27,
+                  "endLine": 552,
+                  "endColumn": 69
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": null,
+              "1": null,
+              "2": null,
+              "3": null
+            }
+          }
+        },
+        {
+          "ruleId": "S1066",
+          "level": "warning",
+          "message": "Merge this if statement with the enclosing one.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 17,
+                  "endLine": 18,
+                  "endColumn": 19
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 13,
+                  "endLine": 16,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "Merge this if statement with its nested one."
+            }
+          }
+        },
+        {
+          "ruleId": "SA1400",
+          "level": "warning",
+          "message": "Element 'Program' should declare an access modifier",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 6,
+                  "startColumn": 7,
+                  "endLine": 6,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1202",
+          "level": "warning",
+          "message": "'public' members should come before 'private' members",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 11,
+                  "startColumn": 24,
+                  "endLine": 11,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 19 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 81,
+                  "startColumn": 24,
+                  "endLine": 81,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 84,
+                  "startColumn": 9,
+                  "endLine": 84,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 13,
+                  "endLine": 88,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 36,
+                  "endLine": 88,
+                  "endColumn": 38
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 94,
+                  "startColumn": 13,
+                  "endLine": 94,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 104,
+                  "startColumn": 9,
+                  "endLine": 104,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 13,
+                  "endLine": 107,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 64,
+                  "endLine": 107,
+                  "endColumn": 66
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 9,
+                  "endLine": 113,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 13,
+                  "endLine": 116,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 116,
+                  "startColumn": 65,
+                  "endLine": 116,
+                  "endColumn": 67
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 9,
+                  "endLine": 122,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 13,
+                  "endLine": 125,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 125,
+                  "startColumn": 64,
+                  "endLine": 125,
+                  "endColumn": 66
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 9,
+                  "endLine": 130,
+                  "endColumn": 11
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+2 (incl 1 for nesting)",
+              "10": "+1",
+              "11": "+2 (incl 1 for nesting)",
+              "12": "+1",
+              "13": "+1",
+              "2": "+1",
+              "3": "+2 (incl 1 for nesting)",
+              "4": "+1",
+              "5": "+2 (incl 1 for nesting)",
+              "6": "+1",
+              "7": "+1",
+              "8": "+2 (incl 1 for nesting)",
+              "9": "+1"
+            }
+          }
+        },
+        {
+          "ruleId": "S108",
+          "level": "warning",
+          "message": "Either remove or fill this block of code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 52,
+                  "endLine": 20,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1501",
+          "level": "warning",
+          "message": "Statement should not be on a single line",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 20,
+                  "startColumn": 52,
+                  "endLine": 20,
+                  "endColumn": 53
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3776",
+          "level": "warning",
+          "message": "Refactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 283,
+                  "startColumn": 24,
+                  "endLine": 283,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 289,
+                  "startColumn": 9,
+                  "endLine": 289,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 294,
+                  "startColumn": 13,
+                  "endLine": 294,
+                  "endColumn": 16
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 297,
+                  "startColumn": 17,
+                  "endLine": 297,
+                  "endColumn": 19
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 304,
+                  "startColumn": 13,
+                  "endLine": 304,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 13,
+                  "endLine": 310,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 37,
+                  "endLine": 310,
+                  "endColumn": 39
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 319,
+                  "startColumn": 9,
+                  "endLine": 319,
+                  "endColumn": 14
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 13,
+                  "endLine": 323,
+                  "endColumn": 15
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 40,
+                  "endLine": 323,
+                  "endColumn": 42
+                }
+              }
+            },
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 329,
+                  "startColumn": 13,
+                  "endLine": 329,
+                  "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "0": "+1",
+              "1": "+2 (incl 1 for nesting)",
+              "2": "+3 (incl 2 for nesting)",
+              "3": "+2 (incl 1 for nesting)",
+              "4": "+2 (incl 1 for nesting)",
+              "5": "+1",
+              "6": "+1",
+              "7": "+2 (incl 1 for nesting)",
+              "8": "+1",
+              "9": "+2 (incl 1 for nesting)"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1850",
+          "level": "note",
+          "message": "Prefer static 'System.Security.Cryptography.SHA256.HashData' method over 'ComputeHash'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 240,
+                  "startColumn": 24,
+                  "endLine": 240,
+                  "endColumn": 76
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 239,
+                  "startColumn": 22,
+                  "endLine": 239,
+                  "endColumn": 46
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "ComputeTypePropertyKey": "ComputeHash",
+              "DeleteHashCreationPropertyKey": "DeleteHashCreationPropertyKey",
+              "HashCreationIndexPropertyKey": "0",
+              "TargetHashTypeDiagnosticPropertyKey": "SHA256"
+            }
+          }
+        },
+        {
+          "ruleId": "CA1862",
+          "level": "note",
+          "message": "Prefer the string comparison method overload of 'string.Contains(string)' that takes a 'StringComparison' enum value to perform a case-insensitive comparison, but keep in mind that this might cause subtle changes in behavior, so make sure to conduct thorough testing after applying the suggestion, or if culturally sensitive comparison is not required, consider using 'StringComparison.OrdinalIgnoreCase'",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 193,
+                  "startColumn": 17,
+                  "endLine": 193,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "LeftOffendingMethod": "ToLower",
+              "RightOffendingMethod": null
+            }
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 156,
+                  "startColumn": 17,
+                  "endLine": 156,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 108,
+                  "startColumn": 17,
+                  "endLine": 108,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 117,
+                  "startColumn": 17,
+                  "endLine": 117,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 126,
+                  "startColumn": 17,
+                  "endLine": 126,
+                  "endColumn": 23
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 31,
+                  "endLine": 88,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 88,
+                  "startColumn": 53,
+                  "endLine": 88,
+                  "endColumn": 56
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 7,
+                  "startColumn": 13,
+                  "endLine": 7,
+                  "endColumn": 22
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/idGenerator.cs",
+                "region": {
+                  "startLine": 19,
+                  "startColumn": 21,
+                  "endLine": 19,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 259,
+                  "startColumn": 21,
+                  "endLine": 259,
+                  "endColumn": 30
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 409,
+                  "startColumn": 25,
+                  "endLine": 409,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 411,
+                  "startColumn": 25,
+                  "endLine": 411,
+                  "endColumn": 93
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 438,
+                  "startColumn": 25,
+                  "endLine": 438,
+                  "endColumn": 39
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 440,
+                  "startColumn": 25,
+                  "endLine": 440,
+                  "endColumn": 92
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S1643",
+          "level": "warning",
+          "message": "Use a StringBuilder instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 586,
+                  "startColumn": 13,
+                  "endLine": 586,
+                  "endColumn": 25
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1503",
+          "level": "warning",
+          "message": "Braces should not be omitted",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 372,
+                  "startColumn": 30,
+                  "endLine": 372,
+                  "endColumn": 47
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1122",
+          "level": "warning",
+          "message": "Use string.Empty for empty strings",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 40,
+                  "endLine": 293,
+                  "endColumn": 42
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1300",
+          "level": "note",
+          "message": "Element 'rootMainMenu' should begin with an uppercase letter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 454,
+                  "startColumn": 24,
+                  "endLine": 454,
+                  "endColumn": 36
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 32,
+                  "endLine": 310,
+                  "endColumn": 35
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 310,
+                  "startColumn": 55,
+                  "endLine": 310,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 35,
+                  "endLine": 323,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CA1847",
+          "level": "note",
+          "message": "Use 'string.Contains(char)' instead of 'string.Contains(string)' when searching for a single character",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 323,
+                  "startColumn": 61,
+                  "endLine": 323,
+                  "endColumn": 64
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1122",
+          "level": "warning",
+          "message": "Use string.Empty for empty strings",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 620,
+                  "startColumn": 32,
+                  "endLine": 620,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1122",
+          "level": "warning",
+          "message": "Use string.Empty for empty strings",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 582,
+                  "startColumn": 24,
+                  "endLine": 582,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA1111",
+          "level": "warning",
+          "message": "Closing parenthesis should be on line of last parameter",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 545,
+                  "startColumn": 13,
+                  "endLine": 545,
+                  "endColumn": 14
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1,
+            "customProperties": {
+              "action": "remove",
+              "layout": "pack",
+              "location": "preceding"
+            }
+          }
+        },
+        {
+          "ruleId": "SA1117",
+          "level": "warning",
+          "message": "The parameters should all be placed on the same line or each parameter should be placed on its own line.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///Users/sebastian/Downloads/demo/Program.cs",
+                "region": {
+                  "startLine": 541,
+                  "startColumn": 17,
+                  "endLine": 541,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "SA0001",
+          "level": "warning",
+          "message": "XML comment analysis is disabled due to project configuration",
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1847": {
+          "id": "CA1847",
+          "shortDescription": "Use char literal for a single character lookup",
+          "fullDescription": "'string.Contains(char)' is available as a better performing overload for single char lookup.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1847",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1850": {
+          "id": "CA1850",
+          "shortDescription": "Prefer static 'HashData' method over 'ComputeHash'",
+          "fullDescription": "It is more efficient to use the static 'HashData' method over creating and managing a HashAlgorithm instance to call 'ComputeHash'.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1850",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CA1862": {
+          "id": "CA1862",
+          "shortDescription": "Use the 'StringComparison' method overloads to perform case-insensitive string comparisons",
+          "fullDescription": "Avoid calling 'ToLower', 'ToUpper', 'ToLowerInvariant' and 'ToUpperInvariant' to perform case-insensitive string comparisons because they lead to an allocation. Instead, prefer calling the method overloads of 'Contains', 'IndexOf' and 'StartsWith' that take a 'StringComparison' enum value to perform case-insensitive comparisons. Switching to using an overload that takes a 'StringComparison' might cause subtle changes in behavior, so it's important to conduct thorough testing after applying the suggestion. Additionally, if a culturally sensitive comparison is not required, consider using 'StringComparison.OrdinalIgnoreCase'.",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1862",
+          "properties": {
+            "category": "Performance",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "CS8600": {
+          "id": "CS8600",
+          "shortDescription": "Converting null literal or possible null value to non-nullable type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8600)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8602": {
+          "id": "CS8602",
+          "shortDescription": "Dereference of a possibly null reference.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8602)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8604": {
+          "id": "CS8604",
+          "shortDescription": "Possible null reference argument.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8604)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "CS8618": {
+          "id": "CS8618",
+          "shortDescription": "Non-nullable field must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring as nullable.",
+          "defaultLevel": "warning",
+          "helpUri": "https://msdn.microsoft.com/query/roslyn.query?appId=roslyn&k=k(CS8618)",
+          "properties": {
+            "category": "Compiler",
+            "isEnabledByDefault": true,
+            "tags": [
+              "Compiler",
+              "Telemetry"
+            ]
+          }
+        },
+        "S1066": {
+          "id": "S1066",
+          "shortDescription": "Mergeable \"if\" statements should be combined",
+          "fullDescription": "Nested code - blocks of code inside blocks of code - is eventually necessary, but increases complexity. This is why keeping the code as flat as possible, by avoiding unnecessary nesting, is considered a good practice.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1066",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S108": {
+          "id": "S108",
+          "shortDescription": "Nested blocks of code should not be left empty",
+          "fullDescription": "An empty code block is confusing. It will require some effort from maintainers to determine if it is intentional or indicates the implementation is incomplete.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-108",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1104": {
+          "id": "S1104",
+          "shortDescription": "Fields should not have public accessibility",
+          "fullDescription": "Public fields in public classes do not respect the encapsulation principle and have three main disadvantages:",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1104",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1118": {
+          "id": "S1118",
+          "shortDescription": "Utility classes should not have public constructors",
+          "fullDescription": "Whenever there are portions of code that are duplicated and do not depend on the state of their container class, they can be centralized inside a \"utility class\". A utility class is a class that only has static members, hence it should not be instantiated.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1118",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1192": {
+          "id": "S1192",
+          "shortDescription": "String literals should not be duplicated",
+          "fullDescription": "Duplicated string literals make the process of refactoring complex and error-prone, as any change would need to be propagated on all occurrences.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1192",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S1643": {
+          "id": "S1643",
+          "shortDescription": "Strings should not be concatenated using '+' in a loop",
+          "fullDescription": "Concatenating multiple string literals or strings using the + operator creates a new string object for each concatenation. This can lead to a large number of intermediate string objects and can be inefficient. The StringBuilder class is more efficient than string concatenation, especially when the operator is repeated over and over as in loops.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-1643",
+          "properties": {
+            "category": "Minor Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S2223": {
+          "id": "S2223",
+          "shortDescription": "Non-constant static fields should not be visible",
+          "fullDescription": "Unlike instance fields, which can only be accessed by code having a hold on the instance, static fields can be accessed by any code having visibility of the field and its type.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-2223",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "S3776": {
+          "id": "S3776",
+          "shortDescription": "Cognitive Complexity of methods should not be too high",
+          "fullDescription": "This rule raises an issue when the code cognitive complexity of a function is above a certain threshold.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-3776",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": false,
+            "tags": [
+              "C#",
+              "MainSourceScope",
+              "TestSourceScope",
+              "SonarWay"
+            ]
+          }
+        },
+        "SA0001": {
+          "id": "SA0001",
+          "shortDescription": "XML comment analysis disabled",
+          "fullDescription": "XML comment analysis can only be performed when the project is configured to parse documentation comments. To enable this functionality, update the project to produce an XML documentation file as part of the build.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA0001.md",
+          "properties": {
+            "category": "StyleCop.CSharp.SpecialRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1009": {
+          "id": "SA1009",
+          "shortDescription": "Closing parenthesis should be spaced correctly",
+          "fullDescription": "A closing parenthesis within a C# statement is not spaced correctly.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1009.md",
+          "properties": {
+            "category": "StyleCop.CSharp.SpacingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1111": {
+          "id": "SA1111",
+          "shortDescription": "Closing parenthesis should be on line of last parameter",
+          "fullDescription": "The closing parenthesis or bracket in a call to or declaration of a C# method/indexer/attribute/array/constructor/delegate is not placed on the same line as the last parameter.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1111.md",
+          "properties": {
+            "category": "StyleCop.CSharp.ReadabilityRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1117": {
+          "id": "SA1117",
+          "shortDescription": "Parameters should be on same line or separate lines",
+          "fullDescription": "The parameters to a C# method or indexer call or declaration are not all on the same line or each on a separate line.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1117.md",
+          "properties": {
+            "category": "StyleCop.CSharp.ReadabilityRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1122": {
+          "id": "SA1122",
+          "shortDescription": "Use string.Empty for empty strings",
+          "fullDescription": "The C# code includes an empty string, written as \"\".",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1122.md",
+          "properties": {
+            "category": "StyleCop.CSharp.ReadabilityRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1202": {
+          "id": "SA1202",
+          "shortDescription": "Elements should be ordered by access",
+          "fullDescription": "An element within a C# code file is out of order in relation to other elements in the code.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1202.md",
+          "properties": {
+            "category": "StyleCop.CSharp.OrderingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1300": {
+          "id": "SA1300",
+          "shortDescription": "Element should begin with upper-case letter",
+          "fullDescription": "The name of a C# element does not begin with an upper-case letter.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1300.md",
+          "properties": {
+            "category": "StyleCop.CSharp.NamingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1307": {
+          "id": "SA1307",
+          "shortDescription": "Accessible fields should begin with upper-case letter",
+          "fullDescription": "The name of a public or internal field in C# does not begin with an upper-case letter.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1307.md",
+          "properties": {
+            "category": "StyleCop.CSharp.NamingRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1400": {
+          "id": "SA1400",
+          "shortDescription": "Access modifier should be declared",
+          "fullDescription": "The access modifier for a C# element has not been explicitly defined.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1400.md",
+          "properties": {
+            "category": "StyleCop.CSharp.MaintainabilityRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1401": {
+          "id": "SA1401",
+          "shortDescription": "Fields should be private",
+          "fullDescription": "A field within a C# class has an access modifier other than private.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1401.md",
+          "properties": {
+            "category": "StyleCop.CSharp.MaintainabilityRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1501": {
+          "id": "SA1501",
+          "shortDescription": "Statement should not be on a single line",
+          "fullDescription": "A C# statement containing opening and closing braces is written completely on a single line.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1501.md",
+          "properties": {
+            "category": "StyleCop.CSharp.LayoutRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1503": {
+          "id": "SA1503",
+          "shortDescription": "Braces should not be omitted",
+          "fullDescription": "The opening and closing braces for a C# statement have been omitted.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1503.md",
+          "properties": {
+            "category": "StyleCop.CSharp.LayoutRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1507": {
+          "id": "SA1507",
+          "shortDescription": "Code should not contain multiple blank lines in a row",
+          "fullDescription": "The C# code contains multiple blank lines in a row.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1507.md",
+          "properties": {
+            "category": "StyleCop.CSharp.LayoutRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1518": {
+          "id": "SA1518",
+          "shortDescription": "Use line endings correctly at end of file",
+          "fullDescription": "File is required to end with a single newline character",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1518.md",
+          "properties": {
+            "category": "StyleCop.CSharp.LayoutRules",
+            "isEnabledByDefault": true
+          }
+        },
+        "SA1633": {
+          "id": "SA1633",
+          "shortDescription": "File should have header",
+          "fullDescription": "A C# code file is missing a standard file header.",
+          "defaultLevel": "warning",
+          "helpUri": "https://github.com/DotNetAnalyzers/StyleCopAnalyzers/blob/master/documentation/SA1633.md",
+          "properties": {
+            "category": "StyleCop.CSharp.DocumentationRules",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

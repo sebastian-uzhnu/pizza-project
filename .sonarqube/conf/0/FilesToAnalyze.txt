@@ -1,0 +1,8 @@
+﻿/Users/sebastian/Downloads/demo/idGenerator.cs
+/Users/sebastian/Downloads/demo/Pizzas.cs
+/Users/sebastian/Downloads/demo/Program.cs
+/Users/sebastian/Downloads/demo/.editorconfig
+/Users/sebastian/Downloads/demo/products.csv
+/Users/sebastian/Downloads/demo/README.md
+/Users/sebastian/Downloads/demo/stylecop.json
+/Users/sebastian/Downloads/demo/users.csv
